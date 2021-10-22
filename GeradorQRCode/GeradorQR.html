@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        	function GeraQRCode()		
+	        {
+                var conteudo = document.getElementById('conteudoQRCode').value;
+                var GoogleCharts = 'https://chart.googleapis.com/chart?chs=500x500&cht=qr&chl=';
+                var imagemQRCode = GoogleCharts + conteudo;
+                document.getElementById('imageQRCode').src = imagemQRCode;
+                alert('Gerado Com Sucesso, Abraço');
+            }
+    </script>
+</head>
+<body>
+    
+
+<h1>
+    Gerador de QR Code com jQuery
+  </h1> 
+  
+  <textarea maxlength="256" rows="3" id="conteudoQRCode"></textarea>
+  <br/>
+  <button type="button" onclick="GeraQRCode()">
+     Gerar QR Code
+  </button>
+  
+  <br/><br/>
+  
+  <img id="imageQRCode" src="https://www.blogson.com.br/wp-content/uploads/2020/12/Gerar-QR-Code-com-jQuery-ou-JavaScript-1.png">
+  
+  
+  <!-- www.blogson.com.br -->
+</body>
+</html>
